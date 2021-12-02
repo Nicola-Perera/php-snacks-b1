@@ -11,7 +11,7 @@ $login_name = $_GET['name'];
 $login_mail = $_GET['mail'];
 $login_age = $_GET['age'];
 var_dump($login_name, $login_mail, $login_age);
-if ($login_age == '25') {
+if (count($login_name) > 2 && is_int($login_age)) {
     var_dump('confermato');
 }
 else {
