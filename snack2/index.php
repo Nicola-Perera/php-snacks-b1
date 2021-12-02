@@ -7,5 +7,8 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
  -->
 
  <?php
-
+$login_name = $_GET['name'];
+$login_mail = $_GET['mail'];
+$login_age = $_GET['age'];
+var_dump($login_name, $login_mail, $login_age);
  ?>
