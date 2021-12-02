@@ -11,10 +11,11 @@ $login_name = $_GET['name'];
 $login_mail = $_GET['mail'];
 $login_age = $_GET['age'];
 var_dump($login_name, $login_mail, $login_age);
-if (count($login_name) > 2 && is_int($login_age)) {
-    var_dump('confermato');
+var_dump(count($login_name) > 3);
+if (count($login_name) > 3 !== false && strpos($login_mail, '@') !== false && is_int($login_age) !== false) {
+    var_dump('accesso confermato');
 }
 else {
-    var_dump('negato');
+    var_dump('accesso negato');
 }
  ?>
