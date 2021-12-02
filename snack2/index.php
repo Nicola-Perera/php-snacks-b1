@@ -11,4 +11,10 @@ $login_name = $_GET['name'];
 $login_mail = $_GET['mail'];
 $login_age = $_GET['age'];
 var_dump($login_name, $login_mail, $login_age);
+if ($login_age == '25') {
+    var_dump('confermato');
+}
+else {
+    var_dump('negato');
+}
  ?>
